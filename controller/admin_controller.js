@@ -39,7 +39,7 @@ module.exports.postAdminRoute = async (req, res) => {
   }
 };
 
-//for searching users in admin pannel
+//for searching users in admin pannel using regex
 module.exports.postSearchuser = async (req, res) => {
   const name = req.body.search;
   const regex = new RegExp(`^(${name})`, "i");
